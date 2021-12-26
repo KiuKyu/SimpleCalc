@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <style>
+        button {
+            width: 50px;
+            height: 50px;
+            font-size: 16px;
+        }
+
+        #console {
+            width: 210px;
+            height: 40px;
+            font-size: 16px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4">
+                <input disabled id="console" type="text" value="0">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="pressButton('1')">1</button>
+            </td>
+            <td>
+                <button onclick="pressButton('2')">2</button>
+            </td>
+            <td>
+                <button onclick="pressButton('3')">3</button>
+            </td>
+            <td>
+                <button onclick="pressButton('+')">+</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="pressButton('4')">4</button>
+            </td>
+            <td>
+                <button onclick="pressButton('5')">5</button>
+            </td>
+            <td>
+                <button onclick="pressButton('6')">6</button>
+            </td>
+            <td>
+                <button onclick="pressButton('-')">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="pressButton('7')">7</button>
+            </td>
+            <td>
+                <button onclick="pressButton('8')">8</button>
+            </td>
+            <td>
+                <button onclick="pressButton('9')">9</button>
+            </td>
+            <td>
+                <button onclick="pressButton('*')">x</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="clearConsole()">C</button>
+            </td>
+            <td>
+                <button onclick="pressButton('0')">0</button>
+            </td>
+            <td>
+                <button onclick="calculate()">=</button>
+            </td>
+            <td>
+                <button onclick="pressButton('/')">/</button>
+            </td>
+        </tr>
+    </table>
+    <script src="calc.js"></script>
+</body>
+</html>
